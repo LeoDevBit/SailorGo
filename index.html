@@ -93,7 +93,13 @@
 
         .detailsBox {
             display: flex;
-
+            flex-direction: row;
+        }
+        @media (max-width: 767px) {
+            .detailsBox {
+                display: flex;
+                flex-direction: column;
+            }
         }
 
         .scrnBox {
@@ -174,7 +180,7 @@
         </div>
         <p class="name">Sailor GO Virtual Browser | With Server</p>
         <p class="brand">SAILOR STUDIO | Productivity</p>
-        <a href="Sailor GO.zip" download="S">
+        <a href="Sailor GO.zip">
             <button class="btn">Download</button></a>
     </div>
 
