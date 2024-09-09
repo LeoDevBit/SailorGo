@@ -11,7 +11,8 @@
 
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="Download Virtual Browser: Sailor Go ">
-    <meta property="og:description" content="View unknown links in a secure virtual browser instead of risking your own PC.">
+    <meta property="og:description"
+        content="View unknown links in a secure virtual browser instead of risking your own PC.">
     <meta property="og:image" content="cover.png">
     <meta property="og:type" content="website">
     <title>Download Sailor Go | Virtual Browser</title>
@@ -58,6 +59,8 @@
             margin-top: 20px;
             font-weight: 500;
             cursor: default;
+            margin-left: 10px;
+            margin-right: 10px;
 
         }
 
@@ -95,12 +98,7 @@
             display: flex;
             flex-direction: row;
         }
-        @media (max-width: 767px) {
-            .detailsBox {
-                display: flex;
-                flex-direction: column;
-            }
-        }
+
 
         .scrnBox {
             border: 1px solid rgb(155, 155, 155);
@@ -109,9 +107,26 @@
             padding-left: 12px;
             margin-bottom: 100px;
             padding-bottom: 40px;
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
             width: 70%;
+        }
+
+        @media (max-width: 767px) {
+            .detailsBox {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            .scrnBox {
+            width: 90%;
+            margin-bottom: 15px;
+            }
+            .scrnBoxSp {
+            margin-bottom: 45px;
+            }
         }
 
         .scrnimg {
@@ -169,7 +184,6 @@
             width: 100%;
             font-size: 14px;
         }
-
     </style>
 </head>
 
@@ -193,7 +207,7 @@
                 <img src="img/4.png" class="scrn" onclick="openInPopup('img/4.png')">
             </div>
         </div>
-        <div class="scrnBox">
+        <div class="scrnBox scrnBoxSp">
             <h4>Description</h4>
             <div class="infoBox">
                 <p class="info">
@@ -212,7 +226,7 @@
         </div>
     </div>
 
-   
+
 
     <script>
         function openInPopup(imageSrc) {
